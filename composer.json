@@ -1,0 +1,17 @@
+{
+    "name": "elmaguiri/tchat",
+    "description": "A small t'chat project using MVC pattern",
+    "authors": [
+        {
+            "name": "Omar El Maguiri",
+            "email": "omarelmaguiri@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Core\\" : "core/",
+        "App\\" : "src/"
+      }
+    },
+    "require": {}
+}
