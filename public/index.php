@@ -21,6 +21,5 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $request = new \Core\Http\Request();
 $kernel = new \Core\Kernel();
-dd($kernel);
 $response = $kernel->handle($request);
 $response->send();
