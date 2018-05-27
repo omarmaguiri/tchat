@@ -119,7 +119,7 @@ class LoginController extends Controller
         $user = $this->getUser();
         $user->setActive(0);
         $repository->save($user);
-        $this->get('session')->remove('user');
+        $this->get('session')->destroy();
         return $this->redirect('login');
     }
 
