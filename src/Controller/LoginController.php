@@ -108,7 +108,7 @@ class LoginController extends Controller
         try {
             $repository->save($user);
         } catch (\PDOException $e) {
-            $this->redirect('login?error=exist');
+            return $this->redirect('login?error=exist');
         }
         $this->get('session')->set('user', serialize($user));
         return $this->redirect('homepage');
